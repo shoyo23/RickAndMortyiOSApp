@@ -10,6 +10,7 @@ import UIKit
 // MARK: CONTROLLER TO SHOW OPTIONS FOR SETTINGS
 final class RMSettingsVC: UIViewController {
 
+    // MARK: VIEW LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
 
