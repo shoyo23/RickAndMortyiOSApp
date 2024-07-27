@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: CONTROLLER TO HOUSE TABS AND ROOT TAB CONTROLLERS
 final class RMTabViewController: UITabBarController {
 
     // MARK: VIEW LIFE CYCLE

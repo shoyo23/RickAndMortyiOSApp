@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: CONTROLLER TO SHOW AND SEARCH FOR CHARACTERS 
 final class RMCharacterVC: UIViewController {
 
     override func viewDidLoad() {

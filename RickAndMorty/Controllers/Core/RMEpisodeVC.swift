@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: CONTROLLER TO SHOW AND SEARCH FOR EPISODES
 final class RMEpisodeVC: UIViewController {
 
     override func viewDidLoad() {

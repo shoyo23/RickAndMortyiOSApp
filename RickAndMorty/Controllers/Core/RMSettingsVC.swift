@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: CONTROLLER TO SHOW OPTIONS FOR SETTINGS
 final class RMSettingsVC: UIViewController {
 
     override func viewDidLoad() {
