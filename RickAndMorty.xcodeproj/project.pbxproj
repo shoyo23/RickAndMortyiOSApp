@@ -14,6 +14,7 @@
 		0914D2F72C527AAF00515503 /* RMLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914D2F62C527AAF00515503 /* RMLocationVC.swift */; };
 		0914D2F92C527ABD00515503 /* RMEpisodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914D2F82C527ABD00515503 /* RMEpisodeVC.swift */; };
 		0914D2FB2C527B8600515503 /* RMSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914D2FA2C527B8600515503 /* RMSettingsVC.swift */; };
+		0920FA3F2CA97233004CC3D1 /* GetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920FA3E2CA97233004CC3D1 /* GetAllCharactersResponse.swift */; };
 		0921679A2C5504FC000D38CE /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092167992C5504FC000D38CE /* RMService.swift */; };
 		0921679C2C550516000D38CE /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0921679B2C550516000D38CE /* RMRequest.swift */; };
 		0921679E2C550658000D38CE /* RMEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0921679D2C550658000D38CE /* RMEndPoint.swift */; };
@@ -36,6 +37,7 @@
 		0914D2F62C527AAF00515503 /* RMLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationVC.swift; sourceTree = "<group>"; };
 		0914D2F82C527ABD00515503 /* RMEpisodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeVC.swift; sourceTree = "<group>"; };
 		0914D2FA2C527B8600515503 /* RMSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsVC.swift; sourceTree = "<group>"; };
+		0920FA3E2CA97233004CC3D1 /* GetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharactersResponse.swift; sourceTree = "<group>"; };
 		092167992C5504FC000D38CE /* RMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
 		0921679B2C550516000D38CE /* RMRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequest.swift; sourceTree = "<group>"; };
 		0921679D2C550658000D38CE /* RMEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndPoint.swift; sourceTree = "<group>"; };
@@ -74,13 +76,8 @@
 		0914D2E62C5276EE00515503 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0914D2ED2C52793000515503 /* RMLocation.swift */,
-				0914D2EF2C52793E00515503 /* RMCharacter.swift */,
-				0914D2F12C52796A00515503 /* RMEpisode.swift */,
-				0921679F2C551ABE000D38CE /* RMOrigin.swift */,
-				092167A12C551B6F000D38CE /* RMSingleLocation.swift */,
-				092167A32C552017000D38CE /* RMCharacterStatus.swift */,
-				092167A52C55206D000D38CE /* RMCharacterGender.swift */,
+				0920FA392CA971D2004CC3D1 /* APIResponseTypes */,
+				0920FA382CA97156004CC3D1 /* DataTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +127,28 @@
 				0914D2FA2C527B8600515503 /* RMSettingsVC.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		0920FA382CA97156004CC3D1 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				0914D2EF2C52793E00515503 /* RMCharacter.swift */,
+				0914D2F12C52796A00515503 /* RMEpisode.swift */,
+				0914D2ED2C52793000515503 /* RMLocation.swift */,
+				0921679F2C551ABE000D38CE /* RMOrigin.swift */,
+				092167A12C551B6F000D38CE /* RMSingleLocation.swift */,
+				092167A32C552017000D38CE /* RMCharacterStatus.swift */,
+				092167A52C55206D000D38CE /* RMCharacterGender.swift */,
+			);
+			name = DataTypes;
+			sourceTree = "<group>";
+		};
+		0920FA392CA971D2004CC3D1 /* APIResponseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				0920FA3E2CA97233004CC3D1 /* GetAllCharactersResponse.swift */,
+			);
+			name = APIResponseTypes;
 			sourceTree = "<group>";
 		};
 		09F2FEDD2C5273AB00D1CF64 = {
@@ -237,6 +256,7 @@
 				092167A42C552017000D38CE /* RMCharacterStatus.swift in Sources */,
 				092167A62C55206D000D38CE /* RMCharacterGender.swift in Sources */,
 				0914D2F52C527A9100515503 /* RMCharacterVC.swift in Sources */,
+				0920FA3F2CA97233004CC3D1 /* GetAllCharactersResponse.swift in Sources */,
 				0914D2F22C52796A00515503 /* RMEpisode.swift in Sources */,
 				09F2FEEE2C5273AB00D1CF64 /* RMTabViewController.swift in Sources */,
 				09F2FEEA2C5273AB00D1CF64 /* AppDelegate.swift in Sources */,
