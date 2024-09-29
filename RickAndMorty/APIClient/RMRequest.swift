@@ -16,14 +16,19 @@ final class RMRequest {
 
     // QUERY PARAMETERS
     
-    
+    // MARK: API CONSTANTS
     private struct Constants {
          static let baseUrl = "https://rickandmortyapi.com/api"
         
     }
     
+    // MARK: DESIRED ENDPOINT
     private let endPoint: RMEndPoint
-    private let pathComponents : [String]
+    
+    // MARK: PATH COMPONENTS FOR API, IF ANY
+    private let pathComponents : Set<String>
+    
+    // MARK: QUERY ARGUMENTS FOR API
     private let queryParameters: [URLQueryItem]
     
     // Constructed url for the api request in string format
@@ -55,15 +60,24 @@ final class RMRequest {
     
     
     
-    //MARK: computed property
+    //MARK: COMPUTED & CONSTRUCTED API URL
     public var url: URL? {
          return URL(string: urlString)
         
-        
     }
     
+    // MARK: DESIRED API METHOD
+    public let httpMethod = "GET"
+    
+    // MARK: CONSTRUCT REQUEST
+    // - PARAMETERS:
+    // -ENDPOINT: TARGET ENDPOINT
+    // -PATHCOMPONENTS: COLLECTION OF THE PATH COMPONENTS
+    //-QUERYPARAMETERS: COLLECTION OF THE QUERYPARAMETERS
+    
     // MARK: HERE IT MAY BE INITIALIZED WITH EMPTY ARRAY
-    public init(endPoints: RMEndPoint, pathComponents: [String] = [], queryParameters: [URLQueryItem] = []) {
+    // CONSTRUCTOR
+    public init(endPoints: RMEndPoint, pathComponents: Set<String> = [], queryParameters: [URLQueryItem] = []) {
         self.endPoint = endPoints
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
